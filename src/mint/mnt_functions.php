@@ -1,35 +1,31 @@
 <?php
 
-function mnt_remove_admin_bar_menu($admin_bar, $array)
+function mnt_remove_admin_top_menu(array $admin_bar_items, array $allows = [])
 {
-	foreach ($array as $item) {
-		$admin_bar->remove_menu($item);
-	}
+	add_action('admin_bar_menu', function (WP_Admin_Bar $admin_bar) use ($admin_bar_items, $allows) {
+		$user = wp_get_current_user();
 
-	return $admin_bar;
+		if (!in_array($user->user_login, $allows)) {
+			foreach ($admin_bar_items as $item) {
+				$admin_bar->remove_menu($item);
+			}
+		}
+
+		return $admin_bar;
+	}, 999);
 }
 
-function mnt_remove_admin_bar_node($admin_bar, $array)
+function mnt_remove_admin_menu(array $menu_items, array $allows = [])
 {
-	foreach ($array as $item) {
-		$admin_bar->remove_node($item);
-	}
+	add_action('admin_menu', function () use ($menu_items, $allows) {
+		$user = wp_get_current_user();
 
-	return $admin_bar;
-}
-
-function mnt_remove_menu_page($pages)
-{
-	foreach ($pages as $page) {
-		remove_menu_page($page);
-	}
-}
-
-function mnt_remove_submenu_page($subPages)
-{
-	foreach ($subPages as $page => $subPage) {
-		remove_submenu_page($page, $subPage);
-	}
+		if (!in_array($user->user_login, $allows)) {
+			foreach ($menu_items as $item) {
+				remove_menu_page($item);
+			}
+		}
+	});
 }
 
 function mnt_header_scripts($scripts)
