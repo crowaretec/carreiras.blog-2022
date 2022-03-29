@@ -1,3 +1,3 @@
 <?php
 
-//'Nada que lhe interece aqui ;)';
+//'Nada que lhe interesse aqui ;)';
