@@ -44,21 +44,21 @@ function mnt_footer_scripts($scripts)
 	}
 }
 
-function mnt_create_ctp($postTypes)
+function mnt_create_ctp($post_types)
 {
-	foreach ($postTypes as $postType) {
-		unset($postType['support']['tags']);
+	foreach ($post_types as $post_type) {
+		unset($post_type['support']['tags']);
 
 		$labels = [
-			'name' => __($postType['name']),
-			'singular_name' => __($postType['singular']),
+			'name' => __($post_type['name']),
+			'singular_name' => __($post_type['singular']),
 			'add_new' => __('Adicionar'),
-			'add_new_item' => __('Adicionar ' . $postType['singular']),
+			'add_new_item' => __('Adicionar ' . $post_type['singular']),
 			'edit_item' => __('Editar'),
-			'new_item' => __('Nova ' . $postType['singular']),
-			'all_items' => __('Listar ' . $postType['name']),
-			'view_item' => __('Ver ' . $postType['singular']),
-			'search_items' => __('Buscar ' . $postType['singular']),
+			'new_item' => __('Nova ' . $post_type['singular']),
+			'all_items' => __('Listar ' . $post_type['name']),
+			'view_item' => __('Ver ' . $post_type['singular']),
+			'search_items' => __('Buscar ' . $post_type['singular']),
 			'featured_image' => 'Imagem Destacada',
 			'set_featured_image' => 'Adicionar Imagem Destacada'
 		];
@@ -66,21 +66,21 @@ function mnt_create_ctp($postTypes)
 		$params = array(
 			'labels' => $labels,
 			'public' => true, //nao altera
-			'supports' => $postType['support'],
+			'supports' => $post_type['support'],
 			'taxonomies' => array('post_tag')
 		);
 
-		if (isset($postType['icon'])) {
-			$params['menu_icon'] = $postType['icon'];
+		if (isset($post_type['icon'])) {
+			$params['menu_icon'] = $post_type['icon'];
 		}
 
-		register_post_type($postType['slug'], $params);
+		register_post_type($post_type['slug'], $params);
 
-		if (isset($postType['taxonomy'])) {
-			foreach ($postType['taxonomy'] as $taxonomy) {
+		if (isset($post_type['taxonomy'])) {
+			foreach ($post_type['taxonomy'] as $taxonomy) {
 				register_taxonomy(
 					$taxonomy['slug'], //Nome da categoria
-					array($postType['slug']), //post type de referencia
+					array($post_type['slug']), //post type de referencia
 					array(
 						'hierarchical' => true, //padrao
 						'label' => __($taxonomy['name']), //Nome que aparecera no menu 
