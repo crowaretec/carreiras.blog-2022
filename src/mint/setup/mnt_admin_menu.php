@@ -1,5 +1,7 @@
 <?php
 
+mnt_hide_admin_bar();
+
 mnt_remove_admin_top_menu([
     'wp-logo',
     'comments',

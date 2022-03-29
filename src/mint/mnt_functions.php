@@ -1,5 +1,11 @@
 <?php
 
+function mnt_hide_admin_bar() {
+	add_filter('show_admin_bar', function () {
+		return false;
+	});
+}
+
 function mnt_remove_admin_top_menu(array $admin_bar_items, array $allows = [])
 {
 	add_action('admin_bar_menu', function (WP_Admin_Bar $admin_bar) use ($admin_bar_items, $allows) {
