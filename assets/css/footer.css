@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+/* RODAPÉ -> Icons */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 800px;
+}
+
+.footer-ul {
+  display: flex;
+  align-content: stretch;
+}
+
+.footer-ul ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  color: rgb(255, 255, 255);
+  background-color: #ff9922;
+  text-align: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.social-icons a .fa {
+  line-height: 47px;
+}
+
+.social-icons a:hover {
+  color: #000;
+}
+
+/* RODAPÉ -> Lista */
+.footer {
+  width: 50%;
+}
+
+.footer li {
+  padding-bottom: 5px;
+}
+
+.footer li a {
+  font-size: 1em;
+  color: #565656;
+  margin-bottom: 5px;
+}
+
+.footer .first a {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #4499cc;
+  border-bottom: 1px #565656 solid;
+  padding-bottom: 7%;
+}
+
+.footer .first {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* ========== MOBILE FIRST ==========*/
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 357px) {
+}
+
+@media screen and (min-width: 768px) {
+  /* RODAPÉ -> Icons */
+
+  footer {
+    /* background-color: red; */
+    display: block;
+    margin-top: 800px;
+  }
+
+  .social-icons {
+    /* background-color: blue; */
+  }
+
+  .social-icons a {
+    text-align: center;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+  }
+
+  .social-icons a .fa {
+    font-size: 1.3em;
+    line-height: 58px;
+  }
+
+  .social-icons a:hover {
+    color: #000;
+  }
+
+  /* RODAPÉ -> Lista */
+
+  .footer-ul {
+    /* background-color: green; */
+    display: block;
+  }
+
+  .footer {
+    width: 50%;
+  }
+
+  .left {
+    padding-left: 7%;
+  }
+
+  .rigth {
+    padding-left: 7%;
+  }
+
+  .footer li {
+    padding-bottom: 5px;
+  }
+
+  .footer li a {
+    font-size: 1.2em;
+    color: #565656;
+    margin-bottom: 5px;
+  }
+
+  .footer .first a {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #4499cc;
+    border-bottom: 1px #565656 solid;
+    padding-bottom: 7%;
+  }
+
+  .footer .first {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+  /* RODAPÉ -> Icons */
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons a {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-left: 25px;
+  }
+
+  .social-icons a .fa {
+    line-height: 47px;
+  }
+
+  .social-icons a:hover {
+    color: #000;
+  }
+
+  /* RODAPÉ -> Lista */
+  .grid {
+    display: grid;
+    gap: 10px;
+  }
+
+  .footer {
+    width: 50%;
+  }
+
+  .footer .footer-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .footer li {
+    padding-bottom: 5px;
+  }
+
+  .footer li a {
+    font-size: 1em;
+    color: #565656;
+    margin-bottom: 5px;
+  }
+
+  .footer .first a {
+    font-size: 1.3em;
+    border-bottom: none;
+  }
+
+  .footer .first {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px #565656 solid;
+    padding-bottom: 20px;
+  }
+
+  .first-part {
+    margin-right: 20px;
+  }
+
+  .footer-ul ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .left {
+    padding: 40px;
+  }
+
+  .rigth {
+    padding: 40px;
+  }
+}
