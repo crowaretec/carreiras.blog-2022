@@ -1,6 +1,7 @@
 <?php
 
-function mnt_hide_admin_bar() {
+function mnt_hide_admin_bar()
+{
 	add_filter('show_admin_bar', function () {
 		return false;
 	});
@@ -101,4 +102,27 @@ function mnt_create_ctp($post_types)
 			}
 		}
 	}
+}
+
+function mnt_add_meta_box($id, $title, $screen = null)
+{
+	add_meta_box(
+		"mnt-metabox-{$id}",
+		$title,
+		function ($post) use ($id) {
+			require MINT_PATH . "/templates/{$id}-metabox.php";
+		},
+		$screen
+	);
+}
+
+function mnt_wp_verify_nonce($nonce, $context)
+{
+	return isset($_POST["{$nonce}_nonce"])
+		&& wp_verify_nonce($_POST["{$nonce}_nonce"], "{$nonce}_{$context}_nonce");
+}
+
+function mnt_nonce_field($nonce, $context, $echo = true)
+{
+	wp_nonce_field("mint_{$nonce}_{$context}_nonce", "mint_{$nonce}_nonce", true, $echo);
 }

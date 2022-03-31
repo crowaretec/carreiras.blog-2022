@@ -133,3 +133,45 @@ add_action('init', function () {
 
     mnt_create_ctp($post_types);
 });
+
+add_action('add_meta_boxes', function () {
+
+    mnt_add_meta_box('informacoes', 'Informações', [
+        'noticias',
+        'seu-emprego',
+        'profissao',
+        'salarios',
+        'mercado',
+        'curso-evento',
+        'teste',
+    ]);
+
+    mnt_add_meta_box('guia-processos', 'Guia processos seletivos', 'seu-emprego');
+});
+
+add_action('save_post', function ($post_id, $post) {
+
+    if (!current_user_can('edit_post', $post_id)) {
+        return;
+    }
+
+    if (mnt_wp_verify_nonce('informacoes', 'metabox')) {
+        $fonte = isset($_POST['fonte']) ? strip_tags($_POST['fonte']) : null;
+        $link = isset($_POST['link']) ? strip_tags($_POST['link']) : null;
+        $destaque = isset($_POST['destaque']) ? 1 : 0;
+        $destaque_home = isset($_POST['destaque-home']) ? 1 : 0;
+        $destaque_principal = isset($_POST['destaque-principal']) ? 1 : 0;
+
+        update_post_meta($post_id, '_fonte', $fonte);
+        update_post_meta($post_id, '_link', $link);
+        update_post_meta($post_id, '_destaque', $destaque);
+        update_post_meta($post_id, '_destaque_principal', $destaque_principal);
+        update_post_meta($post_id, '_destaque_home', $destaque_home);
+    }
+    
+    if (mnt_wp_verify_nonce('guia_processos', 'metabox')) {
+        $aparece = isset($_POST['aparece-guia-processos']) ? 1 : 0;
+        update_post_meta($post_id, '_aparece_guia_processos', $aparece);
+    }
+
+}, 10, 2);
