@@ -155,6 +155,8 @@ add_action('save_post', function ($post_id, $post) {
         return;
     }
 
+    //var_dump(mnt_wp_verify_nonce('informacoes', 'metabox')); die;
+
     if (mnt_wp_verify_nonce('informacoes', 'metabox')) {
         $fonte = isset($_POST['fonte']) ? strip_tags($_POST['fonte']) : null;
         $link = isset($_POST['link']) ? strip_tags($_POST['link']) : null;
@@ -175,3 +177,9 @@ add_action('save_post', function ($post_id, $post) {
     }
 
 }, 10, 2);
+
+add_action('wp_verify_nonce_failed', function ($nonce, $action, $user, $token) {
+
+    
+
+}, 10, 4);

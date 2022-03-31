@@ -118,11 +118,11 @@ function mnt_add_meta_box($id, $title, $screen = null)
 
 function mnt_wp_verify_nonce($nonce, $context)
 {
-	return isset($_POST["{$nonce}_nonce"])
-		&& wp_verify_nonce($_POST["{$nonce}_nonce"], "{$nonce}_{$context}_nonce");
+	return isset($_POST["mint_{$nonce}_nonce"])
+		&& wp_verify_nonce($_POST["mint_{$nonce}_nonce"], "mint_{$nonce}_{$context}_nonce");
 }
 
 function mnt_nonce_field($nonce, $context, $echo = true)
 {
-	wp_nonce_field("mint_{$nonce}_{$context}_nonce", "mint_{$nonce}_nonce", true, $echo);
+	return wp_nonce_field("mint_{$nonce}_{$context}_nonce", "mint_{$nonce}_nonce", true, $echo);
 }
