@@ -6,7 +6,7 @@ mnt_remove_admin_top_menu([
     'wp-logo',
     'comments',
     'new-content',
-]);
+], ['androrim']);
 
 mnt_remove_admin_menu([
     'edit.php', //posts
