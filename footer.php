@@ -8,42 +8,38 @@
         </div>
         <div class="footer-ul">
             <ul>
-                <div class="footer left grid">
+                <div class="footer left grid career">
                     <div class="footer-header">
-                    <li class="first"><a href="#">Carreiras</a></li>
+                        <li class="first"><a href="#">Carreiras</a></li>
                     </div>
-                    <!-- Primeira Parte -->
                     <div class="first-part">
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Seu Emprego</a></li>
-                    <li><a href="#">Profissões</a></li>
-                    <li><a href="#">Salários</a></li>
-                    <li><a href="#">Cursos e Eventos</a></li>
-                    <br>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Seu Emprego</a></li>
+                        <li><a href="#">Profissões</a></li>
+                        <li><a href="#">Salários</a></li>
+                        <li class="adjust-line"><a href="#">Cursos e Eventos</a></li>
+                        <br>
                     </div>
                     <div class="second-part">
-                    <!-- Segunda Parte -->
-                    <li><a href="#">Pesquisa Salarial</a></li>
-                    <li><a href="#">Carta de Apresentação</a></li>
-                    <li><a href="#">Cargos mais Buscados</a></li>
+                        <li class="adjust-line"><a href="#">Pesquisa Salarial</a></li>
+                        <li><a href="#">Carta de Apresentação</a></li>
+                        <li><a href="#">Cargos mais Buscados</a></li>
                     </div>
                 </div>
-                <div class="footer rigth grid">
+                <div class="footer rigth grid jobs">
                     <div class="footer-header">
-                    <li class="first"><a href="#">Empregos.com.br</a></li>
+                        <li class="first position"><a href="#">Empregos.com.br</a></li>
                     </div>
-                    <!-- Primeira Parte -->
-                    <div class="first-part">
-                    <li><a href="#">Busque Vagas</a></li>
-                    <li><a href="#">Busque Empresa</a></li>
-                    <li><a href="#">Busque Currículos</a></li>
-                    <li><a href="#">Cadastrar</a></li>
-                    <br>
+                    <div class="first-part adjust">
+                        <li><a href="#">Busque Vagas</a></li>
+                        <li><a href="#">Busque Empresa</a></li>
+                        <li><a href="#">Busque Currículos</a></li>
+                        <li><a href="#">Cadastrar</a></li>
+                        <br>
                     </div>
                     <div class="second-part">
-                    <!-- Segunda Parte -->
-                    <li><a href="#">Currículos</a></li>
-                    <li><a href="#">Anuncio Grátis de Vagas</a></li>
+                        <li><a href="#">Currículos</a></li>
+                        <li><a href="#">Anuncio Grátis de Vagas</a></li>
                     </div>
                 </div>
                 <div class="footer left">

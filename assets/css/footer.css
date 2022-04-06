@@ -22,6 +22,7 @@ footer {
 .social-icons {
   display: flex;
   width: 100%;
+  font-size: 1.8em;
   justify-content: center;
   justify-content: space-around;
 }
@@ -46,6 +47,27 @@ footer {
 /* RODAPÉ -> Lista */
 .footer {
   width: 50%;
+}
+
+.career {
+  width: 40%;
+}
+
+.jobs {
+  width: 60%;
+  padding-left: 10px;
+}
+
+.adjust {
+  padding-right: 70px;
+}
+
+.adjust-line {
+  padding-right: 20px;
+}
+
+.position {
+  margin-top: 13%;
 }
 
 .footer li {
@@ -80,13 +102,8 @@ footer {
   /* RODAPÉ -> Icons */
 
   footer {
-    /* background-color: red; */
     display: block;
     margin-top: 800px;
-  }
-
-  .social-icons {
-    /* background-color: blue; */
   }
 
   .social-icons a {
@@ -101,27 +118,14 @@ footer {
     line-height: 58px;
   }
 
-  .social-icons a:hover {
-    color: #000;
-  }
-
   /* RODAPÉ -> Lista */
 
   .footer-ul {
-    /* background-color: green; */
     display: block;
   }
 
   .footer {
     width: 50%;
-  }
-
-  .left {
-    padding-left: 7%;
-  }
-
-  .rigth {
-    padding-left: 7%;
   }
 
   .footer li {
