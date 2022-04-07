@@ -134,7 +134,7 @@
             <li><a href="#">Mercado</a></li>
             <li><a href="#">Cursos e Eventos</a></li>
             <li class="ultimo"><a href="#">Testes</a></li>
-            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-search button-away" aria-hidden="true"></i></a></li>
         </ul>
     </div>
     </header>
