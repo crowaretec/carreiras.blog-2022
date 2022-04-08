@@ -1,5 +1,49 @@
 @charset "UTF-8";
 
+/* RODAPÉ -> Seu Emprego */
+
+.your-job {
+  background-color: #284d8a;
+  color: #fff;
+  padding: 7% 5%;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.main-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.read-more {
+  background-color: #ff9922;
+  color: #fff;
+  border-radius: 25px;
+  margin-top: 10%;
+  width: 40%;
+  line-height: 40px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.read-more-all {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  width: 100%;
+  line-height: 40px;
+  font-size: 0.9rem;
+}
+
+.content {
+  padding: 5% 0;
+}
+
 /* RODAPÉ -> Icons */
 
 footer {

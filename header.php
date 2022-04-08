@@ -39,7 +39,7 @@
                     </div>
                     <div class="secund">
                         <li><a href="#">Cadastre-se</a></li>
-                        <li class="ultimo"><a href="#">Entrar</a></li>
+                        <li class="last"><a href="#">Entrar</a></li>
                     </div>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
             <div class="secund-menu">
                 <ul>
                     <li><a href="#">Cadastre-se</a></li>
-                    <li class="ultimo"><a href="#">Entrar</a></li>
+                    <li class="last"><a href="#">Entrar</a></li>
                 </ul>
             </div>
         </div>
@@ -86,7 +86,7 @@
                 <li><a href="#">Currículos</a></li>
                 <li><a href="#">Carreiras</a></li>
                 <li><a href="#">Cadastre-se</a></li>
-                <li class="ultimo"><a href="#">Entrar</a></li>
+                <li class="last"><a href="#">Entrar</a></li>
             </ul> -->
             <ul class="secund">
                 <li><a href="#">Notícias</a></li>
@@ -107,14 +107,14 @@
                 <li><a href="#">Salários</a></li>
                 <li><a href="#">Mercado</a></li>
                 <li><a href="#">Cursos e Eventos</a></li>
-                <li class="ultimo"><a href="#">Testes</a></li>
+                <li class="last"><a href="#">Testes</a></li>
             </ul>
         </nav>
     </header>
     <!-- Sidebar Menu - Desktop -->
     <div class="secund-desk">
         <ul>
-            <li><a href="#">Carreiras</a></li>
+            <li class="first-line"><a href="#">Carreiras</a></li>
             <li><a href="#">Notícias</a></li>
             <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Seu Emprego
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -133,8 +133,8 @@
             <li><a href="#">Salários</a></li>
             <li><a href="#">Mercado</a></li>
             <li><a href="#">Cursos e Eventos</a></li>
-            <li class="ultimo"><a href="#">Testes</a></li>
-            <li><a href="#"><i class="fa fa-search button-away" aria-hidden="true"></i></a></li>
+            <li><a href="#">Testes</a></li>
+            <li class="last-search"><a href="#"><i class="fa fa-search button-away" aria-hidden="true"></i></a></li>
         </ul>
     </div>
     </header>
