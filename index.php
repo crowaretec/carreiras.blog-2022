@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div>
+<div class="wrap container">
     olá mundo!
 </div>
 

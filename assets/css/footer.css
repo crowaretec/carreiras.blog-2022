@@ -1,77 +1,70 @@
 @charset "UTF-8";
 
-/* RODAPÉ -> Seu Emprego */
+/* Seu Emprego */
 
 .your-job {
   background-color: #284d8a;
   color: #fff;
-  padding: 7% 5%;
-  margin-bottom: 30px;
+  padding-top: 9%;
+  padding-bottom: 9%;
 }
 
-h4 {
-  font-weight: bold;
-  padding: 10px 0;
-}
-
-.main-text {
+.your-job h1 {
   font-size: 2.5rem;
+  font-weight: 700 bold;
+}
+
+.your-job h1 i {
+  font-size: 1.7rem;
+  font-weight: lighter;
+  padding: 10px 0px 0px 10px;
+  vertical-align: text-top;
+}
+
+.your-job article h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.your-job article h3 {
+  font-size: 1.5rem;
   font-weight: bold;
+  margin: 10px 0;
 }
 
-.read-more {
-  background-color: #ff9922;
-  color: #fff;
-  border-radius: 25px;
-  margin-top: 10%;
-  width: 40%;
-  line-height: 40px;
-  border: none;
-  font-size: 0.9rem;
+.your-job article p {
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
-.read-more-all {
-  background-color: transparent;
+.your-job article {
+  margin-top: 11%;
+}
+
+.your-job article .read-more {
+  margin-top: 6%;
+}
+
+.your-job .read-more-all {
   color: #fff;
-  border-radius: 25px;
-  border: 1px solid #fff;
+  border-color: #fff;
   width: 100%;
-  line-height: 40px;
-  font-size: 0.9rem;
-}
-
-.content {
-  padding: 5% 0;
+  margin-top: 9%;
 }
 
 /* RODAPÉ -> Icons */
 
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 800px;
-}
-
-.footer-ul {
-  display: flex;
-  align-content: stretch;
-}
-
-.footer-ul ul {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.social-icons {
+footer section.social-icons {
   display: flex;
   width: 100%;
+  margin-top: 14%;
+
   font-size: 1.8em;
   justify-content: center;
   justify-content: space-around;
 }
 
-.social-icons a {
+footer section.social-icons a {
   color: rgb(255, 255, 255);
   background-color: #ff9922;
   text-align: center;
@@ -80,45 +73,67 @@ footer {
   height: 48px;
 }
 
-.social-icons a .fa {
+footer section.social-icons a .fa {
   line-height: 47px;
 }
 
-/* RODAPÉ -> Lista */
-.footer {
-  width: 50%;
+footer section.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.career {
-  width: 40%;
+footer section.nav .box {
+  margin-top: 9%;
 }
 
-.jobs {
+footer section.nav .box.career {
+  width: 35%;
+}
+
+footer section.nav .box.jobs {
   width: 60%;
-  padding-left: 10px;
 }
 
-.adjust {
-  padding-right: 70px;
+footer section.nav .box.about-us {
+  width: 47%;
 }
 
-.adjust-line {
-  padding-right: 20px;
+footer section.nav .box.help {
+  width: 35%;
 }
 
-.position {
-  margin-top: 13%;
+footer section.nav ul {
+  padding: 0;
 }
 
-.footer li {
-  padding-bottom: 5px;
+footer section.nav h2 {
+  font-size: 1.5rem;
+  color: #4499cc;
+
+  width: 100%;
+  height: 40px;
+  border-bottom: #565656 solid 1px;
 }
 
-.footer li a {
+footer section.nav ul {
+  margin-top: 13px;
+}
+
+footer section.nav ul li {
+  margin-bottom: 8px;
+}
+
+footer section.nav ul li.mt {
+  margin-top: 30px;
+}
+
+footer section.nav a {
   font-size: 1em;
   color: #565656;
-  margin-bottom: 5px;
 }
+
+/* RODAPÉ -> Lista */
 
 .footer .first a {
   font-size: 1.3em;
@@ -135,8 +150,6 @@ footer {
 
 /* ========== MOBILE FIRST ==========*/
 /* SMALL DEVICES - SMARTPHONES */
-@media screen and (min-width: 357px) {
-}
 
 @media screen and (min-width: 768px) {
   /* RODAPÉ -> Icons */

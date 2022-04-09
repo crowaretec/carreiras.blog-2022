@@ -12,57 +12,7 @@ License: UNLICENSED
 
 @charset "UTF-8";
 
+@import url("assets/css/main.css");
+@import url("assets/css/btn.css");
 @import url("assets/css/header.css");
 @import url("assets/css/footer.css");
-
-/*=========== INICIO ==========*/
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-body {
-  background-color: #fff;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-img {
-  max-width: 100%;
-}
-
-/*=========== BG COLORS ==========*/
-.bg-orange {
-  background-color: #ff9922;
-}
-
-/*=========== CONTAINER ==========*/
-.container {
-  width: 100%;
-  padding: 3% 4%;
-}
-
-/* ========== MOBILE FIRST ==========*/
-/* SMALL DEVICES - SMARTPHONES */
-@media screen and (min-width: 357px) {
-}
-/* SMALL DEVICES - TABLETS*/
-@media screen and (min-width: 768px) {
-}
-/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
-@media screen and (min-width: 960px) {
-  /*=========== CONTAINER ==========*/
-  .container {
-    padding: 0;
-  }
-}
-/* LARGE DEVICES - WIDE SCREENS*/
-@media screen and (min-width: 1280px) {
-  /*=========== CONTAINER ==========*/
-  .container {
-    padding: 0;
-  }
-}

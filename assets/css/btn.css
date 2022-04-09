@@ -1,0 +1,17 @@
+.read-more {
+    background-color: #ff9922;
+    color: #fff;
+    border-radius: 25px;
+    width: 40%;
+    line-height: 40px;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .read-more-all {
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid;
+    line-height: 40px;
+    font-size: 0.9rem;
+  }

@@ -10,7 +10,7 @@
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/assets/img/icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;700&family=Titillium+Web:wght@300&display=swap">
 
     <title><?= get_option( 'blogname' ) ?></title>
 
