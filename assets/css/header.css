@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
 /* CABEÇALHO - Logo e Menu*/
+
+.main {
+  height: 86px;
+}
+
+.navbar-mobile {
+  height: 86px;
+  display: flex;
+}
 .logo-icon {
-  padding: 10px;
+  padding: 20px 10px;
 }
 .btn-menu {
-  padding: 10px;
+  padding: 30px 20px;
   width: 43%;
   float: left;
   color: #fff;
@@ -27,21 +36,23 @@
   left: 0;
 }
 
-/* MENU ->  Header*/
-.btn-close {
-  font-size: 1.5em;
-  color: #fff;
-  padding: 10px;
-  width: 34%;
-  float: left;
-}
-.subtitle {
+.menu-mobile .subtitle {
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   background-color: #4499cc;
+  padding: 20px;
+  font-weight: bold;
 }
-.subtitle-header {
-  font-family: "Montserrat", sans-serif;
-  padding: 10px;
+
+/* MENU ->  Header*/
+.menu-mobile .subtitle a {
+  width: 34%;
+  float: left;
+  font-size: 1.8rem;
+}
+
+.menu-mobile .subtitle h1 {
+  font-size: 1.8rem;
 }
 
 /* MENU -> Input e Button*/

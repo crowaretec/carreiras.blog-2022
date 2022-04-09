@@ -19,16 +19,16 @@
 
 <body>
     <!-- CABEÇALHO-->
-    <header class="cabecalho container bg-orange">
+    <header class="cabecalho bg-orange">
         <!-- Mobile -->
         <div class="navbar-mobile">
-            <a href="index.html" class="logo-icon">
+        <a class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></a>
+            <h1 href="index.html" class="logo-icon">
                 <img src="<?php bloginfo('template_url'); ?>/assets/img/icon.png">
-            </a>
-            <a href="index.html" class="logo-emp">
+            </h1>
+            <h1 href="index.html" class="logo-emp">
                 <img src="<?php bloginfo('template_url'); ?>/assets/img/empregos-logo.png">
-            </a>
-            <a class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></a>
+            </h1>
             <div class="outside-menu">
                 <ul>
                     <div class="first">
@@ -71,9 +71,9 @@
         </div>
         <!-- Sidebar Menu - Mobile -->
         <nav class="menu-mobile">
-            <div class="subtitle container">
+            <div class="subtitle main">
                 <a class="btn-close"><i class="fa fa-times"></i></a>
-                <h1 class="subtitle-header">Carreiras</h1>
+                <h1>Carreiras</h1>
             </div>
             <div class="input-button">
                 <input type="text" class="search" placeholder="Busque no carreiras">
