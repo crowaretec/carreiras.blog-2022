@@ -1,0 +1,160 @@
+@media screen and (max-width: 768px) {
+  /*########### Header ############*/
+
+  #desk-header {
+    display: none;
+  }
+
+  #mob-header {
+    height: 86px;
+  }
+
+  #mob-header .container {
+    padding: 6%;
+  }
+
+  #mob-header .btn {
+    position: absolute;
+    top: 23px;
+    left: 30px;
+    color: #fff;
+    border: 0;
+    background: transparent;
+    font-size: 2rem;
+  }
+
+  /* MENU ->  Header*/
+  #mob-header .subtitle {
+    height: 86px;
+    background-color: #4499cc;
+    color: #fff;
+  }
+
+  #mob-header .subtitle h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #mob-nav {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    overflow: auto;
+    top: 0;
+    left: 0;
+  }
+
+  #mob-nav form .search {
+    border-radius: 8px;
+    font-size: 1.1em;
+    height: 40px;
+    width: 100%;
+  }
+
+  #mob-nav form input {
+    border: solid 1px #686868;
+    box-sizing: border-box;
+  }
+
+  #mob-nav form button {
+    background: #4499cc;
+    color: #fff;
+    border: 0;
+    margin-top: 10px;
+  }
+
+  #mob-nav nav ul {
+    padding: 0;
+  }
+
+  #mob-nav nav ul li ul {
+    padding-left: 2%;
+  }
+
+  #mob-nav nav li {
+    padding: 5% 0;
+    border-bottom: 1px #565656 solid;
+  }
+
+  #mob-nav nav .last {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  #mob-nav nav li a {
+    font-size: 1.4em;
+    color: #565656;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  /* ############ Your Job ############ */
+  #your-job {
+    padding-top: 9%;
+    padding-bottom: 9%;
+  }
+
+  #your-job h1 i {
+    font-size: 2.2rem;
+    font-weight: lighter;
+    padding: 0px 0px 0px 12px;
+    vertical-align: text-top;
+    font-style: normal;
+    font-family: auto;
+    line-height: 3rem;
+  }
+
+  #your-job article {
+    margin-top: 11%;
+  }
+
+  #your-job article .read-more {
+    margin-top: 6%;
+  }
+
+  #your-job .read-more-all {
+    width: 100%;
+    margin-top: 9%;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  /* ########## Footer - Icons ########### */
+
+  #main-footer section.social-icons {
+    width: 100%;
+    margin-top: 14%;
+    justify-content: space-around;
+  }
+
+  /* ########## Footer - Main Nav ########### */
+
+  #footer-nav .box {
+    margin-top: 9%;
+  }
+
+  #footer-nav .box.career {
+    width: 35%;
+  }
+
+  #footer-nav .box.jobs {
+    width: 60%;
+  }
+
+  #footer-nav .box.about-us {
+    width: 47%;
+  }
+
+  #footer-nav .box.help {
+    width: 35%;
+  }
+
+  #footer-nav .mt {
+    margin-top: 30px;
+  }
+}

@@ -1,54 +1,66 @@
-<section class="container your-job">
-    <h1>Seu Emprego <i class="fa fa-angle-right"></i></h1>
+<section id="your-job" class="container your-job">
+    <div class="container-fluid">
+        <h1>Seu Emprego <i>></i></h1>
 
-    <article>
-        <h2>Categoria</h2>
-        <h3>Seu Emprego</h3>
+        <div class="articles">
+            <article>
+                <h2>Categoria</h2>
+                <h3>Seu Emprego</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam porta, pharetra est id, maximus
-            Sed eu diam porta, pharetra est id, maximus sapien</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam porta, pharetra est id, maximus
+                    Sed eu diam porta, pharetra est id, maximus sapien</p>
 
-        <button class="read-more">Ler mais</button>
-    </article>
+                <button class="read-more">Ler mais</button>
+            </article>
 
-    <article>
-        <h2>Categoria</h2>
-        <h3>CLT</h3>
+            <article>
+                <h2>Categoria</h2>
+                <h3>CLT</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam porta, pharetra est id, maximus
-            Sed eu diam porta, pharetra est id, maximus sapien</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam porta, pharetra est id, maximus
+                    Sed eu diam porta, pharetra est id, maximus sapien</p>
 
-        <button class="read-more">Ler mais</button>
-    </article>
+                <button class="read-more">Ler mais</button>
+            </article>
 
-    <article>
-        <h2>Categoria</h2>
-        <h3>Comportamento</h3>
+            <article>
+                <h2>Categoria</h2>
+                <h3>Comportamento</h3>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam porta, pharetra est id, maximus
-            Sed eu diam porta, pharetra est id, maximus sapien</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu diam porta, pharetra est id, maximus
+                    Sed eu diam porta, pharetra est id, maximus sapien</p>
 
-        <button class="read-more">Ler mais</button>
-    </article>
+                <button class="read-more">Ler mais</button>
+            </article>
+        </div>
+
+    </div>
 
     <button class="read-more-all">Ler mais</button>
 </section>
 
 <!-- RODAPÉ -->
-<footer>
-
+<footer id="main-footer" class="container-fluid">
     <section class="social-icons">
-        <a href="#" title="Faceboock"><i class="fa fa-facebook"></i></a>
-        <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="Faceboock">
+            <i class="fa-brands fa-facebook-f fa-sm"></i>
+        </a>
+        <a href="#" title="Instagram">
+            <i class="fa-brands fa-instagram fa-sm"></i>
+        </a>
+        <a href="#" title="Linkedin">
+            <i class="fa-brands fa-linkedin-in fa-sm"></i>
+        </a>
+        <a href="#" title="Twitter">
+            <i class="fa-brands fa-twitter fa-sm"></i>
+        </a>
     </section>
 
-    <section class="container nav">
+    <section id="footer-nav" class="container nav">
         <div class="box left career">
             <h2>Carreiras</h2>
 
-            <ul class="first-part">
+            <ul class="first">
                 <li>
                     <a href="#">Notícias</a>
                 </li>
@@ -64,8 +76,10 @@
                 <li>
                     <a href="#">Cursos e Eventos</a>
                 </li>
+            </ul>
 
-                <li class="mt">
+            <ul class="secund mt">
+                <li>
                     <a href="#">Pesquisa Salarial</a>
                 </li>
                 <li>
@@ -80,7 +94,7 @@
         <div class="box rigth jobs">
             <h2>Empregos.com.br</h2>
 
-            <ul class="first-part adjust">
+            <ul class="first">
                 <li>
                     <a href="#">Busque Vagas</a>
                 </li>
@@ -93,8 +107,10 @@
                 <li>
                     <a href="#">Cadastrar</a>
                 </li>
+            </ul>
 
-                <li class="mt">
+            <ul class="secund mt">
+                <li>
                     <a href="#">Currículos</a>
                 </li>
                 <li>

@@ -1,7 +1,6 @@
 /*=========== INICIO ==========*/
 * {
   margin: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -29,28 +28,5 @@ img {
 
 /*=========== CONTAINER ==========*/
 .container {
-  width: 100%;
   padding: 4%;
-}
-
-/* ========== MOBILE FIRST ==========*/
-/* SMALL DEVICES - SMARTPHONES */
-@media screen and (min-width: 357px) {
-}
-/* SMALL DEVICES - TABLETS*/
-@media screen and (min-width: 768px) {
-}
-/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
-@media screen and (min-width: 960px) {
-  /*=========== CONTAINER ==========*/
-  .container {
-    padding: 0;
-  }
-}
-/* LARGE DEVICES - WIDE SCREENS*/
-@media screen and (min-width: 1280px) {
-  /*=========== CONTAINER ==========*/
-  .container {
-    padding: 0;
-  }
 }

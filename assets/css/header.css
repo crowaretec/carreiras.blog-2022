@@ -1,116 +1,24 @@
-@charset "UTF-8";
-
 /* CABEÇALHO - Logo e Menu*/
 
-.main {
-  height: 86px;
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar-mobile {
   height: 86px;
   display: flex;
+  align-items: center;
 }
-.logo-icon {
-  padding: 20px 10px;
-}
-.btn-menu {
-  padding: 30px 20px;
-  width: 43%;
-  float: left;
-  color: #fff;
+
+.cabecalho .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cabecalho {
   padding: 0;
-}
-
-/* MENU */
-.menu-mobile {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: #fff;
-  overflow: auto;
-  top: 0;
-  left: 0;
-}
-
-.menu-mobile .subtitle {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  background-color: #4499cc;
-  padding: 20px;
-  font-weight: bold;
-}
-
-/* MENU ->  Header*/
-.menu-mobile .subtitle a {
-  width: 34%;
-  float: left;
-  font-size: 1.8rem;
-}
-
-.menu-mobile .subtitle h1 {
-  font-size: 1.8rem;
-}
-
-/* MENU -> Input e Button*/
-
-.input-button {
-  padding-top: 2%;
-}
-
-.input-button > button {
-  background: #4499cc;
-  color: #fff;
-  border: 0;
-}
-
-.search {
-  display: block;
-  border-radius: 8px;
-  border: 1px solid;
-  padding-left: 3%;
-  font-size: 0.9em;
-  width: 80%;
-  height: 40px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  flex-direction: row;
-}
-
-/* MENU -> Lista*/
-
-.menu-mobile ul {
-  padding: 10%;
-  padding-top: 10px;
-}
-
-.secund ul {
-  display: none;
-  padding-left: 6%;
-}
-.job {
-  cursor: pointer;
-}
-
-.menu-mobile li {
-  padding: 5% 0;
-  border-bottom: 1px #565656 solid;
-}
-
-.menu-mobile .last {
-  border-bottom: hidden;
-}
-
-.menu-mobile li a {
-  font-size: 1.4em;
-  color: #565656;
-  font-weight: bold;
-  padding-left: 0;
-  padding-right: 15px;
 }
 
 /* ========== MOBILE FIRST ==========*/
@@ -123,11 +31,6 @@
   .navbar-desk {
     display: none;
   }
-
-  .logo-emp {
-    display: none;
-  }
-
   .outside-menu {
     display: none;
   }
@@ -137,41 +40,14 @@
   }
 }
 
-@media screen and (min-width: 357px) {
-  .menu-desk {
-    display: none;
-  }
-
-  .navbar-desk {
-    display: none;
-  }
-
-  .logo-emp {
-    display: none;
-  }
-
-  .outside-menu {
-    display: none;
-  }
-
-  .secund-desk {
-    display: none;
-  }
-}
 /* SMALL DEVICES - TABLETS*/
 @media screen and (min-width: 768px) {
   .navbar-desk {
     display: none;
   }
 
-  .logo-emp {
-    display: none;
-  }
   .outside-menu {
     display: none;
-  }
-  .logo-icon img {
-    padding: 4px;
   }
 
   /* Menu */
@@ -193,10 +69,6 @@
 
   .menu h1 {
     font-size: 1.7em;
-  }
-
-  .secund ul {
-    padding-bottom: 30px;
   }
 }
 /* MEDIUM DEVICES - TABLETS & DESKTOPS*/
@@ -237,34 +109,8 @@
     height: 86px;
   }
 
-  .logo-desk {
-    display: flex;
-    align-items: center;
-  }
-
-  .secund-desk ul ul {
-    display: none;
-    color: #fff;
-    width: 150px;
-    font-size: 0.9em;
-  }
-
   .job {
     cursor: pointer;
-  }
-
-  ul .dropdown-content {
-    display: none;
-    position: absolute;
-    padding: 15px 0 0 9px;
-  }
-
-  .dropdown-content li {
-    padding-bottom: 8%;
-  }
-
-  .dropdown-content li:hover {
-    background-color: rgba(255, 255, 255, 0.5);
   }
 
   .first-menu {
@@ -288,38 +134,8 @@
     padding: 30px;
   }
 
-  .secund-menu {
-    display: flex;
-    align-items: center;
-  }
-
-  .secund-menu ul {
-    display: flex;
-    padding: 15px;
-  }
-
-  .secund-menu li a {
-    font-size: 1.2em;
-    color: #fff;
-    padding: 10px;
-  }
-
-  .secund-menu li a:hover {
-    background-color: #ff8900;
-    padding: 30px;
-  }
-
-  .logo-icon {
-    display: none;
-  }
-
   .cabecalho .btn-menu {
     display: none;
-  }
-
-  .logo-emp {
-    display: flex;
-    padding: 5px;
   }
 
   .last-search {
@@ -329,29 +145,17 @@
 }
 /* LARGE DEVICES - WIDE SCREENS*/
 @media screen and (min-width: 1280px) {
-  .logo-emp {
-    padding: 10px;
-  }
-
   .secund-desk ul ul {
     width: 160px;
   }
 }
 
 @media screen and (min-width: 1560px) {
-  .logo-emp {
-    padding: 10px;
-  }
-
   .secund-desk ul {
     padding: 1% 10%;
   }
 
   .secund-desk ul ul {
     width: 160px;
-  }
-
-  ul .dropdown-content {
-    padding: 20px 0 0 10px;
   }
 }
