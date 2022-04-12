@@ -1,4 +1,3 @@
-@media screen and (max-width: 768px) {
   /*########### Header ############*/
 
   #desk-header {
@@ -73,6 +72,7 @@
 
   #mob-nav nav ul li ul {
     padding-left: 2%;
+    display: none;
   }
 
   #mob-nav nav li {
@@ -100,12 +100,9 @@
   }
 
   #your-job h1 i {
-    font-size: 2.2rem;
-    font-weight: lighter;
-    padding: 0px 0px 0px 12px;
+    font-size: 1.2rem;
     vertical-align: text-top;
     font-style: normal;
-    font-family: auto;
     line-height: 3rem;
   }
 
@@ -157,4 +154,3 @@
   #footer-nav .mt {
     margin-top: 30px;
   }
-}

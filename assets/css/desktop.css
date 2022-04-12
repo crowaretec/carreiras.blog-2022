@@ -1,170 +1,180 @@
-@media screen and (min-width: 769px) {
-  .container-fluid {
-    width: 82%;
-    margin: 0 auto;
+@media screen and (min-width: 910px) and (max-width: 1277px) {
+  body {
+    zoom: 0.7;
   }
+}
 
-  /*########### Header ############*/
-
-  #mob-header {
-    display: none;
+@media screen and (min-width: 769px) and (max-width: 909px) {
+  body {
+    zoom: 0.6;
   }
+}
 
-  #desk-header nav ul li a {
-    color: #fff;
-    font-size: 1.1rem;
+.container-fluid {
+  width: 85%;
+  margin: 0 auto;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 14px;
-  }
+/*########### Header ############*/
 
-  #desk-header .carreiras {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+#mob-header {
+  display: none;
+}
 
-  #desk-header .carreiras .logo {
-    width: 240px;
-  }
+#desk-header nav ul li a {
+  color: #fff;
+  font-size: 1rem;
 
-  #desk-header .carreiras nav {
-    width: 33%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+}
 
-  #desk-header .carreiras nav ul {
-    display: flex;
-    flex-direction: row;
-  }
+#desk-header .carreiras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  #desk-header .carreiras nav ul li a {
-    height: 86px;
-  }
+#desk-header .carreiras .logo {
+  width: 240px;
+}
 
-  #desk-header .carreiras nav ul li a:hover {
-    background-color: #ff8900;
-  }
+#desk-header .carreiras nav {
+  width: 33%;
+}
 
-  #desk-header .carreiras nav.secund {
-    display: flex;
-    justify-content: flex-end;
-  }
+#desk-header .carreiras nav ul {
+  display: flex;
+  flex-direction: row;
+}
 
-  /*########### Header - Blog ############*/
+#desk-header .carreiras nav ul li a {
+  height: 86px;
+}
 
-  #desk-header .blog {
-    background-color: #4499cc;
-  }
+#desk-header .carreiras nav ul li a:hover {
+  background-color: #ff8900;
+}
 
-  #desk-header .blog > ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+#desk-header .carreiras nav.secund {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  #desk-header nav.blog > ul li a {
-    height: 65px;
-  }
+/*########### Header - Blog ############*/
 
-  /* ########### Dopdown #########*/
+#desk-header .blog {
+  background-color: #4499cc;
+}
 
-  #desk-header nav.blog .dropdown {
-    position: relative;
-  }
+#desk-header .blog > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  #desk-header nav.blog a.active {
-    background-color: #308ec7;
-  }
+#desk-header nav.blog > ul li a {
+  height: 65px;
+}
 
-  #desk-header nav.blog .dropdown-content {
-    display: none;
-    width: 190px;
-    background-color: #308ec7;
-    padding: 2%;
-    position: absolute;
-    top: 55px;
+/* ########### Dopdown #########*/
 
-    font-size: 0.9em;
-  }
+#desk-header nav.blog .dropdown {
+  position: relative;
+}
 
-  #desk-header nav.blog li.first a {
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
+#desk-header nav.blog a.active {
+  background-color: #308ec7;
+}
 
-  #desk-header nav.blog li a i {
-    margin-left: 10px;
-  }
+#desk-header nav.blog .dropdown-content {
+  display: none;
+  width: 190px;
+  background-color: #308ec7;
+  padding: 2%;
+  position: absolute;
+  top: 55px;
 
-  #desk-header nav.blog .dropdown-content li a {
-    height: auto;
-    padding: 0;
-    color: #fff;
-    justify-content: left;
-    margin: 2%;
-  }
+  font-size: 0.9em;
+}
 
-  #desk-header nav.blog .dropdown-content li:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+#desk-header nav.blog li.first a {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 
-  /* ############ Your Job ############## */
+#desk-header nav.blog li a i {
+  margin-left: 10px;
+}
 
-  #your-job h1 i,
-  #your-job .read-more-all {
-    display: none;
-  }
+#desk-header nav.blog .dropdown-content li a {
+  height: auto;
+  padding: 0;
+  color: #fff;
+  justify-content: left;
+  margin: 2%;
+}
 
-  #your-job .container-fluid {
-    padding: 2%;
-  }
+#desk-header nav.blog .dropdown-content li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
-  #your-job .articles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2% -2% -2%;
-  }
+/* ############ Your Job ############## */
 
-  #your-job .articles article {
-    margin: 2%;
-  }
+#your-job h1 i,
+#your-job .read-more-all {
+  display: none;
+}
 
-  #your-job article .read-more {
-    margin-top: 4%;
-  }
+#your-job .container-fluid {
+  padding: 2%;
+}
 
-  /*############ Main Footer ##############*/
+#your-job .articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% -2% -2%;
+}
 
-  #main-footer {
-    margin-top: 6%;
-  }
+#your-job .articles article {
+  margin: 2%;
+}
 
-  /* ########## Footer - Nav ########### */
+#your-job article .read-more {
+  margin-top: 4%;
+}
 
-  #footer-nav {
-    margin-top: 2%;
-  }
+/*############ Main Footer ##############*/
 
-  #footer-nav .career ul,
-  #footer-nav .jobs ul {
-    float: left;
-  }
+#main-footer {
+  margin-top: 6%;
+}
 
-  #footer-nav .career ul.secund,
-  #footer-nav .jobs ul.secund {
-    margin-left: 45px;
-  }
+/* ########## Footer - Nav ########### */
 
-  footer section.social-icons {
-    justify-content: center;
-  }
- 
-  footer section.social-icons a {
-    margin: 0 15px;
-  }
+#footer-nav {
+  margin-top: 2%;
+}
+
+#footer-nav .career ul,
+#footer-nav .jobs ul {
+  float: left;
+}
+
+#footer-nav .career ul.secund,
+#footer-nav .jobs ul.secund {
+  margin-left: 45px;
+}
+
+footer section.social-icons {
+  justify-content: center;
+}
+
+footer section.social-icons a {
+  margin: 0 15px;
 }

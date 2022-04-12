@@ -15,7 +15,6 @@
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="<?= get_bloginfo('template_url') ?>/assets/js/actions.js"></script>
 
-
     <title><?= get_option('blogname') ?></title>
 
     <?php wp_head(); ?>
@@ -32,7 +31,7 @@
 
             <h1 class="logo">
                 <a title="<?= get_option('blogname') ?>" href="<?= get_bloginfo('home') ?>">
-                    <img src="<?= get_bloginfo('template_url') ?>/assets/img/Icon.png" />
+                    <img alt="<?= get_option('blogname') ?>" src="<?= get_bloginfo('template_url') ?>/assets/img/Icon.png" />
                 </a>
             </h1>
 
@@ -98,7 +97,7 @@
 
                 <h1 class="logo">
                     <a title="<?= get_option('blogname') ?>" href="<?= get_bloginfo('home') ?>">
-                        <img src="<?= get_bloginfo('template_url') ?>/assets/img/empregos-logo.png" />
+                        <img alt="<?= get_option('blogname') ?>" src="<?= get_bloginfo('template_url') ?>/assets/img/empregos-logo.png" />
                     </a>
                 </h1>
 
