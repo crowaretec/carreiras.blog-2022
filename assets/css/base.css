@@ -1,0 +1,236 @@
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+body {
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 2rem 1.5rem;
+}
+
+.container-rounded {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #d4d0d0;
+}
+
+.bg-orange {
+  background-color: #ff9922;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-blue {
+  background-color: #284d8a;
+}
+
+.bg-grey-01 {
+  background-color: #e5e5e5;
+}
+
+.mt-05 {
+  margin-top: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.banner-div img {
+  display: none;
+  width: 100%;
+}
+
+/*#region Main Header */
+
+#main-header {
+  padding: 0;
+}
+
+#main-header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+}
+
+#main-header .navbar-mobile {
+  height: 86px;
+  display: flex;
+  align-items: center;
+}
+
+#main-header .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*#endregion Main Header */
+
+/*#region Main Footer - Icons */
+
+#main-footer section.social-icons {
+  display: flex;
+  font-size: 1.8em;
+}
+
+#main-footer section.social-icons a {
+  color: rgb(255, 255, 255);
+  background-color: #ff9922;
+  text-align: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+
+#main-footer section.social-icons a .fa {
+  line-height: 47px;
+}
+
+#main-footer section.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#main-footer section.nav ul {
+  padding: 0;
+}
+
+#main-footer section.nav h2 {
+  font-size: 1.5rem;
+  color: #4499cc;
+
+  width: 100%;
+  height: 40px;
+  border-bottom: #565656 solid 1px;
+}
+
+#main-footer section.nav ul {
+  margin-top: 13px;
+}
+
+#main-footer section.nav ul li {
+  margin-bottom: 8px;
+}
+
+#main-footer section.nav a {
+  font-size: 1em;
+  color: #565656;
+}
+
+/*#endregion Main Footer - Icons */
+
+/*#region Archives */
+
+.archives .articles article {
+  position: relative;
+}
+
+.archives .articles.showposts-4 article:first-child {
+  margin-top: 0;
+  height: auto;
+}
+
+.archives .img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.archives .img-rounded {
+  width: 210px;
+  height: 210px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.archives .h1 {
+  font-size: 2.5rem;
+  color: #565656;
+}
+
+.archives .h1 i {
+  font-size: 1.5rem;
+}
+
+.archives .h2 {
+  font-size: 1.7rem;
+  color: #ff9922;
+}
+
+.archives .h3 {
+  font-size: 1.2rem;
+  color: #4499cc;
+  font-weight: normal;
+}
+
+.archives .h4 {
+  font-size: 1.4rem;
+  color: #565656;
+}
+
+.archives .h1 a,
+.archives .h2 a,
+.archives .h3 a,
+.archives .h4 a {
+  font-size: inherit;
+  color: inherit;
+}
+
+.archives.bg-blue .h1,
+.archives.bg-blue .h2,
+.archives.bg-blue .h3,
+.archives.bg-blue .h4,
+.archives.bg-blue p {
+  color: #fff;
+}
+
+.archives article .btn-orange {
+  width: 118px;
+}
+
+/*#endregion Archives */
+
+/*#region Colunistas */
+
+#colunistas {
+  text-align: center;
+}
+
+#colunistas .h2 {
+  color: #565656;
+}
+
+/*#endregion Colunistas */

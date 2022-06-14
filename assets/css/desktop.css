@@ -10,12 +10,41 @@
   }
 }
 
+/*#region commons */
+
 .container-fluid {
   width: 85%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*########### Header ############*/
+.container-fluid.bg-blue {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+.container-fluid.bg-blue header,
+.container-fluid.bg-blue .articles {
+  width: 89%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-div {
+  width: 89%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-div img.desktop {
+  display: block;
+}
+
+/*#endregion commons */
+
+/*#region Header */
 
 #mob-header {
   display: none;
@@ -64,7 +93,9 @@
   justify-content: flex-end;
 }
 
-/*########### Header - Blog ############*/
+/*#endregion Header */
+
+/*#region Header - Blog */
 
 #desk-header .blog {
   background-color: #4499cc;
@@ -80,7 +111,9 @@
   height: 65px;
 }
 
-/* ########### Dopdown #########*/
+/*#endregion Header - Blog */
+
+/*#region Dopdown */
 
 #desk-header nav.blog .dropdown {
   position: relative;
@@ -122,7 +155,9 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* ############ Your Job ############## */
+/*#endregion Dropdown */
+
+/*#region Your Job */
 
 #your-job h1 i,
 #your-job .read-more-all {
@@ -149,13 +184,17 @@
   margin-top: 4%;
 }
 
-/*############ Main Footer ##############*/
+/*#endregion Your Job */
+
+/*#region Main Footer */
 
 #main-footer {
   margin-top: 6%;
 }
 
-/* ########## Footer - Nav ########### */
+/*#endregion Main Footer */
+
+/*#region Footer - Nav */
 
 #footer-nav {
   margin-top: 2%;
@@ -178,3 +217,133 @@ footer section.social-icons {
 footer section.social-icons a {
   margin: 0 15px;
 }
+
+/*#endregion Footer - Nav */
+
+/*#region Archives */
+
+/*#region Archives - default */
+
+.archives .articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-auto-rows: 1fr;
+}
+
+.archives .articles article {
+  width: 31.4%;
+  margin-top: 2rem;
+}
+
+.archives .articles article img {
+  width: 100%;
+  height: auto;
+}
+
+.archives .articles article .article-body {
+  display: flex;
+  flex-direction: column;
+  height: 254px;
+}
+
+.archives .articles article .article-body .btn-orange {
+  margin-top: auto;
+}
+
+.archives .articles.default article,
+.archives .articles.default article .h3 {
+  margin-top: 0;
+}
+
+.archives .articles.default article.even {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/*#endregion Archives - default */
+
+/*#region Archives - big-first */
+
+.archives .articles.big-first article.odd {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.archives .articles.big-first article:first-child {
+  margin: 0;
+}
+
+.archives .articles.big-first article:first-child {
+  display: flex;
+  width: 100%;
+}
+
+.archives .articles.big-first article:first-child img {
+  width: 633px;
+}
+
+.archives .articles.big-first article:first-child .article-body {
+  padding-left: 2.2rem;
+}
+
+/*#endregion Archives - big-first */
+
+/*#region Archives - big-last */
+
+.archives .articles.big-last {
+  position: relative;
+}
+
+.archives .articles.big-last article:first-child,
+.archives .articles.big-last article:last-child {
+  margin-top: 0;
+}
+
+.archives .articles.big-last article {
+  width: 66%;
+  display: flex;
+}
+
+.archives .articles.big-last article .item {
+  width: 48%;
+  height: 100%;
+  display: block;
+  flex: none;
+}
+
+.archives .articles.big-last article .article-body.item {
+  padding-left: 4%;
+}
+
+.archives .articles.big-last article .article-body.item .h3 {
+  margin-top: 0;
+}
+
+.archives .articles.big-last article .article-body .btn {
+  position: absolute;
+  bottom: 4px;
+}
+
+.archives .articles.big-last article:last-child {
+  width: 31%;
+  height: 100%;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+
+.archives .articles.big-last article:last-child .item {
+  width: 100%;
+  height: 50%;
+}
+
+/*#endregion Archives - big-last */
+
+.archives.noticias .btn-orange-outline {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*#endregion Archives */

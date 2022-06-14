@@ -168,10 +168,32 @@ add_action('save_post', function ($post_id, $post) {
         update_post_meta($post_id, '_destaque_principal', $destaque_principal);
         update_post_meta($post_id, '_destaque_home', $destaque_home);
     }
-    
+
     if (mnt_wp_verify_nonce('guia_processos', 'metabox')) {
         $aparece = isset($_POST['aparece-guia-processos']) ? 1 : 0;
         update_post_meta($post_id, '_aparece_guia_processos', $aparece);
     }
-
 }, 10, 2);
+
+mnt_theme_thumbnail_support([
+    [
+        'name' => 'image-thumbnail',
+        'width' => 480,
+        'height' => 271,
+    ],
+    [
+        'name' => 'image-post',
+        'width' => 200,
+        'height' => 130,
+    ],
+    [
+        'name' => 'image-banner-interno',
+        'width' => 632,
+        'height' => 324,
+    ],
+    [
+        'name' => 'image-banner-home',
+        'width' => 1020,
+        'height' => 415,
+    ],
+]);

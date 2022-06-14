@@ -73,6 +73,7 @@ function mnt_create_ctp($post_types)
 		$params = array(
 			'labels' => $labels,
 			'public' => true, //nao altera
+			'has_archive' => true,
 			'supports' => $post_type['support'],
 			'taxonomies' => array('post_tag')
 		);
@@ -125,4 +126,78 @@ function mnt_wp_verify_nonce($nonce, $context)
 function mnt_nonce_field($nonce, $context, $echo = true)
 {
 	return wp_nonce_field("mint_{$nonce}_{$context}_nonce", "mint_{$nonce}_nonce", true, $echo);
+}
+
+function mnt_theme_thumbnail_support($thumbs_settings = [])
+{
+	if (!function_exists('add_theme_support')) {
+		return;
+	}
+
+	add_theme_support('post-thumbnails');
+
+	$default_settings = [
+		'name' => 'image-thumbnail',
+		'width' => 480,
+		'height' => 271,
+		'crop' => true,
+	];
+
+	foreach ($thumbs_settings as $thumb_settings) {
+		$settings = $default_settings;
+
+		if (is_array($thumb_settings)) {
+			$settings = array_merge($default_settings, $thumb_settings);
+		}
+
+		add_image_size($settings['name'], $settings['width'], $settings['height'], $settings['crop']);
+	}
+}
+
+function mnt_post_term_name($post_id, $taxonomy, int $index = -1)
+{
+	$taxonomies = get_the_terms($post_id, $taxonomy);
+	$results = [];
+
+
+	if (empty($taxonomies) || is_wp_error($taxonomies)) {
+		return $index > -1 ? null : [];
+	}
+
+	foreach ($taxonomies as $tax_item) {
+		$results[] = $tax_item->name;
+	}
+
+	if ($index > -1) {
+		return isset($results[$index]) ? $results[$index] : null;
+	}
+
+	return $results;
+}
+
+function mnt_excerpt_title($length = 30, $post = 0, $after = '...')
+{
+	$my_title = get_the_title($post);
+
+	if (strlen($my_title) > $length) {
+		$my_title = substr($my_title, 0, $length);
+	}
+
+	return $my_title . $after;
+}
+
+function mnt_excerpt_content($limit = 55, $post = null, $after = '...')
+{
+	$excerpt = explode(' ', get_the_excerpt($post), $limit);
+	$count = count($excerpt);
+
+	if ($count >= $limit) {
+		array_pop($excerpt);
+		$excerpt = implode(" ", $excerpt) . $after;
+	} else {
+		$excerpt = implode(" ", $excerpt);
+	}
+
+	return preg_replace('`\[[^\]]*\]`', '', $excerpt);
+
 }

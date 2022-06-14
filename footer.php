@@ -1,7 +1,3 @@
-<section id="your-job" class="container your-job">
-    <?php get_template_part( 'template-parts/archives', 'blue'); ?>
-</section>
-
 <!-- RODAPÉ -->
 <footer id="main-footer" class="container-fluid">
     <section class="social-icons">
@@ -109,6 +105,7 @@
         </div>
     </section>
 </footer>
+</div>
 
 </body>
 

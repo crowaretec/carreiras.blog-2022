@@ -1,156 +1,153 @@
-  /*########### Header ############*/
+/* #region  Main Header */
 
-  #desk-header {
-    display: none;
-  }
+#desk-header {
+  display: none;
+}
 
-  #mob-header {
-    height: 86px;
-  }
+#mob-header {
+  height: 86px;
+}
 
-  #mob-header .container {
-    padding: 6%;
-  }
+#mob-header .container {
+  padding: 6%;
+}
 
-  #mob-header .btn {
-    position: absolute;
-    top: 23px;
-    left: 30px;
-    color: #fff;
-    border: 0;
-    background: transparent;
-    font-size: 2rem;
-  }
+#mob-header .btn {
+  position: absolute;
+  top: 23px;
+  left: 30px;
+  color: #fff;
+  border: 0;
+  background: transparent;
+  font-size: 2rem;
+}
 
-  /* MENU ->  Header*/
-  #mob-header .subtitle {
-    height: 86px;
-    background-color: #4499cc;
-    color: #fff;
-  }
+/* MENU ->  Header*/
+#mob-header .subtitle {
+  height: 86px;
+  background-color: #4499cc;
+  color: #fff;
+}
 
-  #mob-header .subtitle h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 5rem;
-    font-family: "Montserrat", sans-serif;
-  }
+#mob-header .subtitle h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
 
-  #mob-nav {
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: #fff;
-    overflow: auto;
-    top: 0;
-    left: 0;
-  }
+#mob-nav {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background-color: #fff;
+  overflow: auto;
+  top: 0;
+  left: 0;
+}
 
-  #mob-nav form .search {
-    border-radius: 8px;
-    font-size: 1.1em;
-    height: 40px;
-    width: 100%;
-  }
+#mob-nav form .search {
+  border-radius: 8px;
+  font-size: 1.1em;
+  height: 40px;
+  width: 100%;
+}
 
-  #mob-nav form input {
-    border: solid 1px #686868;
-    box-sizing: border-box;
-  }
+#mob-nav form input {
+  border: solid 1px #686868;
+  box-sizing: border-box;
+}
 
-  #mob-nav form button {
-    background: #4499cc;
-    color: #fff;
-    border: 0;
-    margin-top: 10px;
-  }
+#mob-nav form button {
+  background: #4499cc;
+  color: #fff;
+  border: 0;
+  margin-top: 10px;
+}
 
-  #mob-nav nav ul {
-    padding: 0;
-  }
+#mob-nav nav ul {
+  padding: 0;
+}
 
-  #mob-nav nav ul li ul {
-    padding-left: 2%;
-    display: none;
-  }
+#mob-nav nav ul li ul {
+  padding-left: 2%;
+  display: none;
+}
 
-  #mob-nav nav li {
-    padding: 5% 0;
-    border-bottom: 1px #565656 solid;
-  }
+#mob-nav nav li {
+  padding: 5% 0;
+  border-bottom: 1px #565656 solid;
+}
 
-  #mob-nav nav .last {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
+#mob-nav nav .last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
-  #mob-nav nav li a {
-    font-size: 1.4em;
-    color: #565656;
-    font-weight: bold;
-    padding-left: 0;
-    padding-right: 15px;
-  }
+#mob-nav nav li a {
+  font-size: 1.4em;
+  color: #565656;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 15px;
+}
 
-  /* ############ Your Job ############ */
-  #your-job {
-    padding-top: 9%;
-    padding-bottom: 9%;
-  }
+/*#endregion Header */
 
-  #your-job h1 i {
-    font-size: 1.2rem;
-    vertical-align: text-top;
-    font-style: normal;
-    line-height: 3rem;
-  }
+/* #region Footer - Icons */
 
-  #your-job article {
-    margin-top: 11%;
-  }
+#main-footer section.social-icons {
+  width: 100%;
+  margin-top: 14%;
+  justify-content: space-around;
+}
 
-  #your-job article .read-more {
-    margin-top: 6%;
-  }
+/*#endregion Footer - Icons */
 
-  #your-job .read-more-all {
-    width: 100%;
-    margin-top: 9%;
-    color: #fff;
-    border-color: #fff;
-  }
+/* #region Footer - Main Nav */
 
-  /* ########## Footer - Icons ########### */
+#footer-nav .box {
+  margin-top: 9%;
+}
 
-  #main-footer section.social-icons {
-    width: 100%;
-    margin-top: 14%;
-    justify-content: space-around;
-  }
+#footer-nav .box.career {
+  width: 35%;
+}
 
-  /* ########## Footer - Main Nav ########### */
+#footer-nav .box.jobs {
+  width: 60%;
+}
 
-  #footer-nav .box {
-    margin-top: 9%;
-  }
+#footer-nav .box.about-us {
+  width: 47%;
+}
 
-  #footer-nav .box.career {
-    width: 35%;
-  }
+#footer-nav .box.help {
+  width: 35%;
+}
 
-  #footer-nav .box.jobs {
-    width: 60%;
-  }
+#footer-nav .mt {
+  margin-top: 30px;
+}
 
-  #footer-nav .box.about-us {
-    width: 47%;
-  }
+/*#endregion Footer - Main Nav */
 
-  #footer-nav .box.help {
-    width: 35%;
-  }
+.banner-div img.mobile {
+  display: block;
+}
 
-  #footer-nav .mt {
-    margin-top: 30px;
-  }
+/*#region Archives */
+
+.archives .img-wrap {
+  height: 149px;
+}
+
+.archives .img-wrap img {
+  position: absolute;
+  top: -40%;
+  z-index: 0;
+}
+
+/*#endregion Archives */
